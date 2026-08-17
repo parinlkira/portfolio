@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting to Portfolio...</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+    }
+    .redirect-message {
+      text-align: center;
+      padding: 2rem;
+    }
+    .redirect-message a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+  <script>
+    // Single redirect using replace to avoid double-loading
+    window.location.replace('portfolio.html');
+  </script>
+</head>
+<body>
+  <div class="redirect-message">
+    <p>Redirecting to <a href="portfolio.html">portfolio</a>…</p>
+    <p><small>If not redirected, click the link above.</small></p>
+  </div>
+</body>
+</html>
